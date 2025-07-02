@@ -1,0 +1,89 @@
+<!-- cybersecurity.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybersecurity - iAssess Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <style>
+        .product img {
+            border-radius: 50%;
+            border: 2px solid var(--hmbgr-line);
+            padding: 5px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="outer-container">
+        <div class="card">
+            <div class="content">
+                <h1>CYBERSECURITY</h1>
+                <p>We leverage AI-driven assessments, real-time threat detection, phishing simulations, and QR code security to protect your digital assets. Our innovative platforms empower individuals and organizations to stay ahead of evolving cyber threats with smart, scalable, and proactive solutions.</p>
+                
+                <br><br>
+                <h2>Our Products</h2>
+
+                <div class="product">
+                    <img src="img/Q.png" alt="QCheck Logo" width="150px" style="border-radius: 50%;">
+                    <h3>QCheck</h3>
+                    <p>QCheck provides advanced AI-powered QR code security by detecting malicious or tampered QR codes in real-time. It helps protect users from phishing, scams, and fraudulent QR code campaigns, ensuring safe interactions with digital content.</p>
+                </div>
+
+                <div class="product">
+                    <img src="img/phish.png" alt="Phishbuster Logo" width="150px" style="border-radius: 50%;">
+                    <h3>Phishbuster</h3>
+                    <p>Phishbuster is our flagship phishing simulation and awareness platform. It delivers personalized phishing simulations, real-time feedback, and behavior-driven vulnerability scoring to help organizations strengthen their human firewall against cyber threats.</p>
+                </div>
+
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bubbles Animation -->
+    <script src="js/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ffffff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5 },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out"
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" }
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
