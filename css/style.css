@@ -98,9 +98,15 @@ transform: rotateZ(7200deg) ;
 .change .line-3{
     transform: rotateZ(210deg) translate(17px, -0.5px);
 }
+.product-list h2 {
+    color: rgb(241, 213, 254);
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
 .nav-list{
-
-text-align: right;
+text-align: center;  
+    margin: 15px 0;     
+    padding: 0;
 }
 .nav-item{
 list-style: none;
