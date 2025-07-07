@@ -1,0 +1,90 @@
+<!-- Qcheck.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qcheck - iAssess Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="outer-container">
+        <div class="card">
+            <div class="content">
+                <h1>Qcheck</h1>
+                <br>
+                <br>
+                <br>
+                <p>
+                    <h2>WHAT ARE QR CODES & HOW THEY WORK?</h2>
+                    <br>
+                    QR (Quick Response) codes are two-dimensional barcodes that store data. They can hold   URLs, text, Wi-Fi credentials, contact info, payment details, etc. are Scannable using a smartphone camera or QR code scanner app. They are used in marketing, payments, authentication, and more.
+                    <ol>
+                        <li>Data Encoding:</li>
+                        Information (URL, text, etc.) is converted into a QR code pattern.
+                        <li>QR Code Generation:</li>
+                        Created using QR code generators in static or dynamic format.
+                        <li>Scanning:</li>
+                        A QR scanner (phone camera or app) detects the black-and-white pattern.
+                        <li>Decoding:</li>
+                        The scanner reads the pattern and extracts the stored information.
+                        <li>Action Execution:</li>
+                        The user is redirected to a website, downloads a file, or makes a payment, based on the QR code's data.
+                    </ol>
+                    <br>
+                    <h2><b>QR CODES AND THEIR SECURITY CONCERNS:</b></h2>
+                    <br>
+                    QR codes facilitate social engineering attacks due to the fact users have to be willing to place a degree of blind faith that they will perform as advertised.
+                    QR codes are widely used for payments, authentication, and data sharing, but they pose significant security risks. Cybercriminals exploit them for phishing attacks, malware distribution, and payment fraud by replacing legitimate codes with malicious ones. Users may unknowingly share sensitive data or install malware. To mitigate these risks, businesses must implement security measures like URL verification, encrypted QR codes, and user awareness training to prevent potential cyber threats.
+                    <br>
+                    <br>
+                    <h2><b>THE PROBLEM WE WANT TO ADRESS:</b></h2>
+                    <br>
+                    Key Security Problems with QR Codes:
+                    <ol>
+                        <li>QRishing (QR Phishing Attacks)</li>
+                        <li>Fake Payment QR Codes (UPI, Paytm, Google Pay Scams)</li>
+                        <li>Malicious QR Codes Distributing Malware</li>
+                        <li>Privacy & Tracking Risks</li>
+                    </ol>
+                    These are all the problems we want to address in this project by combining it into a single main problem.
+                    This makes the project more powerful and useful by covering QR phishing, fraud, malware detection, and privacy protection in one system.
+                    <br>
+                    <br>
+                    <h2><b>WHAT ARE WE PROPOSING TO SPECIFICALLY DESIGN AND IMPLEMENT?</b></h2>
+                    <br>
+                    <ul>
+                        <li>What Are We Proposing to Specifically Design and Implement?
+                            To address phishing, payment fraud, malware risks, and privacy threats in QR codes, we are proposing to design and implement a terminal-based QR Code Security Scanner with the following features:
+                        </li>
+                    </ul>
+                    <ol>
+                        <li>QR Code Scanner (Core System)</li>
+                        A Python-based terminal tool that scans and decodes QR codes from images.Extracts embedded data (URLs, payment links, or text) for security analysis.
+                        <li>API-Based Security Checks (Phishing & Malware Detection)</li>
+                        Integrates VirusTotal API to check if a QR code's URL is linked to phishing or malware.Uses Google Safe Browsing API to verify if the link is blacklisted or suspicious.
+                        <li>AI-Powered Fake Payment QR Code Detection</li>
+                        <ul>
+                            <li>Train a machine learning model to classify real vs. fake payment QR codes.</li>
+                            <li>Analyse payment QR codes based on: </li>
+                            <ul>
+                                <li>UPI ID Structure (e.g., detecting fake payment IDs).</li>
+                                <li>Domain Legitimacy (Ensuring payment URLs belong to real merchants).</li>
+                                <li>Shortened URLs (Commonly used by fraudsters).</li>
+                            </ul>
+                        </ul>
+                        <li>Privacy Protection & Tracking Detection</li>
+                        Identify tracking QR codes that collect user data.Warn users before opening data-harvesting links
+                        <li>Cloud-Based Scan History (Firebase Integration)</li>
+                        Store scanned QR code data in Firebase for future security analysis.Users can view past scan logs for reference.
+                    </ol>
+                </p>                
+                <br>      
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
