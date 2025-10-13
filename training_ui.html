@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cyber Defender Bootcamp | 12-Week Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+         @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#F0F8FA]">
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#004AAD]">THE CYBER DEFENDER BOOTCAMP</h1>
+            <p class="text-lg md:text-2xl text-[#0094D1] mt-2">Master the essentials of digital security, from passwords to penetration testing.</p>
+        </header>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-16">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#0094D1]">
+                <div class="text-5xl font-extrabold text-[#004AAD]">12</div>
+                <div class="text-xl font-semibold text-[#0094D1] mt-2">WEEKS</div>
+                <p class="text-gray-600 mt-1">Intensive, focused training from Monday to Friday.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#0094D1]">
+                <div class="text-5xl font-extrabold text-[#004AAD]">300</div>
+                <div class="text-xl font-semibold text-[#0094D1] mt-2">TOTAL HOURS</div>
+                <p class="text-gray-600 mt-1">Including 240 hours of live sessions and 60 hours of labs.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-[#0094D1]">
+                <div class="text-5xl font-extrabold text-[#004AAD]">100%</div>
+                <div class="text-xl font-semibold text-[#0094D1] mt-2">PRACTICAL LABS</div>
+                <p class="text-gray-600 mt-1">Daily hands-on experience with industry-standard tools.</p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16">
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">A Day in the Life</h2>
+                <p class="text-gray-700 mb-6">Each day is structured to maximize learning and skill application. Your 5-hour daily commitment is split between expert-led instruction and practical, hands-on lab work where you apply the concepts you've just learned.</p>
+                <div class="chart-container">
+                    <canvas id="dailyScheduleChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold text-[#004AAD] mb-4">Balanced Curriculum Focus</h2>
+                <p class="text-gray-700 mb-6">Our curriculum provides a holistic view of cybersecurity, balancing foundational knowledge with offensive techniques, defensive strategies, and crucial governance concepts to create a well-rounded skill set.</p>
+                <div class="chart-container">
+                    <canvas id="curriculumFocusChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-[#004AAD]">Your 12-Week Transformation Journey</h2>
+                <p class="text-xl text-[#0094D1] mt-2">Follow a structured path from foundational concepts to advanced security operations.</p>
+            </div>
+            <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-sm text-white">1</h1>
+                    </div>
+                    <div class="order-1 bg-[#004AAD] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Foundations of Digital Defense</h3>
+                        <p class="text-sm leading-snug tracking-wide text-[#C8E7F5]">Intro to Cybersecurity, CIA Triad, Security Domains.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-sm">2</h1>
+                    </div>
+                    <div class="order-1 bg-[#0094D1] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Understanding the Threat Landscape</h3>
+                        <p class="text-sm text-white">Malware, Ransomware, Phishing, & Social Engineering.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-sm text-white">3-4</h1>
+                    </div>
+                    <div class="order-1 bg-[#004AAD] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Core Defensive Skills</h3>
+                        <p class="text-sm leading-snug tracking-wide text-[#C8E7F5]">Safe Practices, MFA, Network Fundamentals, Firewalls, & VPNs.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-sm">5-6</h1>
+                    </div>
+                    <div class="order-1 bg-[#0094D1] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">System & Data Protection</h3>
+                        <p class="text-sm text-white">Cryptography, Encryption, Hashing, OS Hardening (Win/Linux).</p>
+                    </div>
+                </div>
+
+                 <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-sm text-white">7-8</h1>
+                    </div>
+                    <div class="order-1 bg-[#004AAD] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Offensive Mindset & Governance</h3>
+                        <p class="text-sm leading-snug tracking-wide text-[#C8E7F5]">Ethical Hacking Intro, Recon, Cyber Laws, Career Paths.</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-sm">9-10</h1>
+                    </div>
+                    <div class="order-1 bg-[#0094D1] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Modern Infrastructure Security</h3>
+                        <p class="text-sm text-white">Incident Response, Forensics, and Cloud Security (IAM, VPC).</p>
+                    </div>
+                </div>
+
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-[#0094D1] shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-sm text-white">11-12</h1>
+                    </div>
+                    <div class="order-1 bg-[#004AAD] rounded-lg shadow-xl w-5/12 px-6 py-4">
+                        <h3 class="font-bold text-white text-xl">Advanced Topics & Capstone</h3>
+                        <p class="text-sm leading-snug tracking-wide text-[#C8E7F5]">IoT/Mobile Security, Final Project, & Career Prep.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="my-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-black text-[#004AAD]">Your Defender Toolkit</h2>
+                <p class="text-xl text-[#0094D1] mt-2">Gain hands-on experience with the tools used by professionals every day.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-4xl">🐧</div>
+                    <h3 class="font-bold mt-2 text-[#004AAD]">Kali Linux</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-4xl">🦈</div>
+                    <h3 class="font-bold mt-2 text-[#004AAD]">Wireshark</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-4xl">🗺️</div>
+                    <h3 class="font-bold mt-2 text-[#004AAD]">Nmap</h3>
+                </div>
+                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-4xl">🔐</div>
+                    <h3 class="font-bold mt-2 text-[#004AAD]">OpenSSL</h3>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-4xl">🔑</div>
+                    <h3 class="font-bold mt-2 text-[#004AAD]">Bitwarden</h3>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="text-center mt-20 py-10 border-t-2 border-[#78C0E0]">
+             <h2 class="text-3xl font-bold text-[#004AAD]">Ready to Become a Cyber Defender?</h2>
+             <p class="text-gray-600 my-4 max-w-2xl mx-auto">Enroll in our 12-week bootcamp to launch your cybersecurity career. Build the practical, in-demand skills needed to protect the digital world.</p>
+             <button class="bg-[#0094D1] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#004AAD] transition-colors shadow-lg">ENROLL NOW</button>
+        </footer>
+
+    </div>
+
+    <script>
+        function wrapLabel(label, maxLength) {
+            if (label.length <= maxLength) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const tooltipTitleCallback = function(tooltipItems) {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            } else {
+              return label;
+            }
+        };
+        
+        const brilliantBluesPalette = {
+            darkBlue: '#004AAD',
+            mediumBlue: '#0094D1',
+            lightBlue: '#78C0E0',
+            paleBlue: '#C8E7F5',
+            backgroundBlue: '#F0F8FA'
+        };
+
+        const dailyCtx = document.getElementById('dailyScheduleChart').getContext('2d');
+        new Chart(dailyCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Live Session', 'Practical Lab'],
+                datasets: [{
+                    label: 'Daily Hours',
+                    data: [4, 1],
+                    backgroundColor: [
+                        brilliantBluesPalette.mediumBlue,
+                        brilliantBluesPalette.darkBlue
+                    ],
+                    borderColor: brilliantBluesPalette.backgroundBlue,
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                cutout: '70%',
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 14,
+                                family: 'Inter'
+                            },
+                            color: '#333'
+                        }
+                    },
+                    tooltip: {
+                         callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+        
+        const curriculumCtx = document.getElementById('curriculumFocusChart').getContext('2d');
+        const originalLabels = [
+            'Foundational Concepts', 
+            'Threats & Safe Practices', 
+            'Network & System Security', 
+            'Ethical Hacking & Offensive Security', 
+            'Governance & Incident Response', 
+            'Modern Infrastructure (Cloud/IoT)'
+        ];
+        
+        const wrappedLabels = originalLabels.map(label => wrapLabel(label, 16));
+
+        new Chart(curriculumCtx, {
+            type: 'radar',
+            data: {
+                labels: wrappedLabels,
+                datasets: [{
+                    label: 'Focus Area Coverage',
+                    data: [8, 9, 10, 7, 8, 9],
+                    fill: true,
+                    backgroundColor: 'rgba(0, 148, 209, 0.2)',
+                    borderColor: brilliantBluesPalette.mediumBlue,
+                    pointBackgroundColor: brilliantBluesPalette.mediumBlue,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: brilliantBluesPalette.mediumBlue
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: '#e0e0e0'
+                        },
+                        grid: {
+                            color: '#e0e0e0'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 12,
+                                family: 'Inter',
+                                weight: '600'
+                            },
+                             color: brilliantBluesPalette.darkBlue
+                        },
+                        ticks: {
+                            backdropColor: 'transparent',
+                            stepSize: 2,
+                             color: '#666'
+                        }
+                    }
+                },
+                plugins: {
+                     legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                           title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
