@@ -877,6 +877,22 @@ color: #007bff;       /* Maintain link color */
 
 
 
-
-
 /* VIEW COUNTER */
+
+/* CALENDLY BADGE FIX */
+.calendly-badge-widget {
+  z-index: 4000 !important;  /* Higher than floating icons */
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Optional: move it slightly up so it doesn't overlap WhatsApp */
+@media screen and (max-width: 768px) {
+  .calendly-badge-widget {
+    bottom: 160px !important;
+  }
+}
