@@ -251,6 +251,27 @@ color: rgb(77, 77, 77);
 /* LOGO */
 
 /* LABEL */
+.label {
+  position: relative;
+}
+
+.hero-linkedin {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 10;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .hero-linkedin {
+    position: static;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .label{
 position: relative;
 display: flex;
